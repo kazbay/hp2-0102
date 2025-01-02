@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(38, 221, 78);
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+.h2{
+    text-align: center;
+}
+
+.h3{
+    text-align: center;
+}

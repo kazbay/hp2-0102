@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多摩動物公園</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /*モバイルファースト*/
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            margin: 90px auto 90px auto;
+            box-sizing: border-box;
+            padding: 0 2%;
+            max-width: auto ;
+        }
+
+        img {
+            width: 300px;
+
+        }
+
+        a:link {
+            color: orangered;
+            text-decoration:none;
+        }
+        a:visited {
+            color: orangered;
+            text-decoration:none;
+        }
+        a:hover {
+            color: orangered;
+            text-decoration:underline;
+        }
+        a:active {
+            color: orangered;
+            text-decoration:underline;
+        }
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .hero {
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        .hero.index {
+            padding: 287px;
+            background-image: url();
+        }
+        .items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            text-align: center;
+        }
+
+        header {
+            position: relative;
+            color: #153b04d8;
+        }
+
+        .header-text {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-title {
+            margin-top: 2em;
+            font-size: 2rem;
+            text-shadow: 0 0 10px rgb(243, 222, 182), 0 15 15px #fff;
+        }
+
+        .header-pattern {
+            position: absolute;
+            background-size: auto auto;
+        }
+
+        .header-text, .header-pattern {
+            width: 100%;
+            height: 100vh;
+        }
+
+        /*PC用デザインとして付けた足すデザイン　横幅が1024PX以上の場合*/
+
+        @media (min-width: 1024px) {
+            main {
+                max-width: 1000px;
+            }
+            .items {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            img {
+                width: 300px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="baku.html">バク</a></li>
+                <li><a href="kaeru.html">カエル</a></li>
+                <li><a href="hitosagasi.html">人探し</a></li>
+                <li><a href="hatena.html">？？？</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p class="header-title">多摩動物公園</p>
+            <h1 class="hero index">D134平野上総</h1>
+        </div>
+        <div class="header-pattern"></div>
+        
+    </header>
+    <main>
+        <div class="items">
+            <div>
+                <img src="img/20241128_111239.JPG" alt="ホーム">
+                <p></p>
+            </div>
+        </div>
+        <h2>多摩動物公園にはカッコイイ・かわいい動物がたくさんいるよ！</h2>
+        <h2>上のオレンジのタブから見に行ってみよう(バクから右の順にみてね)</h3>
+        <h2>直接見たいところに飛ぶことも出来るよ！</h2>    
+    </main>
+    <h3>もう一度行こうとは思わない…</h4>
+
+</body>
+
+</html>
